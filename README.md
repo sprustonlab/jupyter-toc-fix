@@ -68,15 +68,14 @@ During installation, the package:
     left: 0px !important;
 }
 
-/* Ensures notebook content fits within page */
+/* Ensures notebook content fits and doesn't overlap with TOC */
 #notebook-container {
-    width: 95% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 88% !important;
+    margin-left: 0px !important;
 }
 ```
 
-**Note:** This CSS fixes the positioning bug while preserving TOC resize functionality.
+**Note:** This CSS fixes the positioning bug while preserving TOC resize functionality. The notebook container is left-aligned at 88% width to avoid overlapping with the TOC.
 
 ## Requirements
 

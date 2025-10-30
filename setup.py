@@ -85,7 +85,7 @@ class PostInstallCommand(install):
 
         css_fix = """
 /* Fix TOC2 positioning - prevents it from being hidden behind header */
-/* Applied by jupyter-toc-fix package v0.2.1 */
+/* Applied by jupyter-toc-fix package v0.2.2 */
 #toc-wrapper {
     position: relative !important;
     top: 130px !important;
@@ -93,9 +93,8 @@ class PostInstallCommand(install):
 }
 
 #notebook-container {
-    width: 95% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 88% !important;
+    margin-left: 0px !important;
 }
 """
 
@@ -110,7 +109,7 @@ class PostInstallCommand(install):
 
 setup(
     name='jupyter-toc-fix',
-    version='0.2.1',
+    version='0.2.2',
     description='Automatically configures jupyter_contrib_nbextensions with TOC positioning fix',
     author='Spruston Lab',
     url='https://github.com/sprustonlab/jupyter-toc-fix',
