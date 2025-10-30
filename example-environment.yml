@@ -1,0 +1,22 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.8
+# Jupyter stack - notebook 6.1.4 (matches working base environment)
+- notebook=6.1.4
+- nbconvert<6  # Critical: nbconvert>=6 breaks TOC extension (github.com/ipython-contrib/jupyter_contrib_nbextensions/issues/1568)
+- ipykernel
+- nb_conda_kernels  # Auto-detect kernels from all conda environments
+# Jupyter extensions (conda packages for auto-install via post-link scripts)
+- jupyter_contrib_nbextensions=0.5.1
+- jupyter_nbextensions_configurator=0.4.1
+# Pip packages
+- pip
+- pip:
+  # Widgets for notebook 6 (exact versions from working base)
+  - ipywidgets==7.6.5
+  - widgetsnbextension==3.5.2
+  - jupyterlab-widgets==3.0.11
+  - anywidget==0.9.12
+  # Auto-configure nbextensions and apply TOC positioning fix
+  - git+https://github.com/sprustonlab/jupyter-toc-fix.git

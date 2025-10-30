@@ -40,6 +40,15 @@ Or install directly:
 pip install git+https://github.com/sprustonlab/jupyter-toc-fix.git
 ```
 
+### Example Environment
+
+See [`example-environment.yml`](example-environment.yml) for a complete Jupyter Notebook 6 environment with:
+- Notebook 6.1.4
+- All widgets (ipywidgets, anywidget)
+- Jupyter extensions auto-configured
+- nb_conda_kernels for multi-environment kernel support
+- TOC positioning fix applied automatically
+
 ### Local installation (for development)
 
 ```bash
