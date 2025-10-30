@@ -17,4 +17,4 @@ References:
 - https://github.com/ipython-contrib/jupyter_contrib_nbextensions/issues/1568
 """
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'

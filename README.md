@@ -61,18 +61,22 @@ During installation, the package:
 ## CSS Applied
 
 ```css
+/* Fixes TOC positioning while allowing resizing */
 #toc-wrapper {
     position: relative !important;
-    width: 20% !important;
     top: 130px !important;
     left: 0px !important;
 }
 
-.container {
-    width: 83% !important;
-    align: left !important;
+/* Ensures notebook content fits within page */
+#notebook-container {
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 ```
+
+**Note:** This CSS fixes the positioning bug while preserving TOC resize functionality.
 
 ## Requirements
 
