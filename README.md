@@ -61,21 +61,21 @@ During installation, the package:
 ## CSS Applied
 
 ```css
-/* Fixes TOC positioning while allowing resizing */
+/* Original Stack Overflow fix - prevents TOC from overlapping with header */
+.container {
+    width: 70% !important;
+    align: left !important;
+}
+
 #toc-wrapper {
     position: relative !important;
+    width: 20% !important;
     top: 130px !important;
     left: 0px !important;
 }
-
-/* Ensures notebook content fits and doesn't overlap with TOC */
-#notebook-container {
-    width: 88% !important;
-    margin-left: 0px !important;
-}
 ```
 
-**Note:** This CSS fixes the positioning bug while preserving TOC resize functionality. The notebook container is left-aligned at 88% width to avoid overlapping with the TOC.
+**Note:** This is the exact CSS from the Stack Overflow solution. When TOC is docked, the container width ensures code cells don't overlap with it.
 
 ## Requirements
 
